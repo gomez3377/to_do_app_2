@@ -1,0 +1,80 @@
+$light-mode-primary-color: #003459;
+$dark-mode-primary-color: #00a8e8;
+$black-color: #00171f;
+$light-color: #caf0f8;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $light-color;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+header {
+  background-color: $light-mode-primary-color;
+  padding: 1.5rem 3rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  transition: all 0.1s ease-in-out;
+  .left-side-header {
+    width: 50%;
+    margin-right: auto;
+  }
+  .right-side-header {
+    width: -50%;
+    display: flex;
+
+    button {
+      color: white;
+      :hover {
+        color: #00a8e8;
+      }
+    }
+
+    button,
+    .user-icon {
+      margin: 0 1rem;
+    }
+    .light-mode-button {
+      display: none;
+    }
+    .dark-mode-button {
+      margin-right: 0;
+    }
+  }
+}
+
+.app-content {
+  display: flex;
+}
+
+.sidebar {
+  width: 30%;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  .display-options {
+    ul {
+      list-style: none;
+      li {
+        button {
+          display: flex;
+          align-items: center;
+          font-size: 1.25rem;
+          p {
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
