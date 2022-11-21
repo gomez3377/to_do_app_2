@@ -1,22 +1,23 @@
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import Main from "./components/Main";
+import React from "react"
 
 function App() {
-  const [checkListItems, setChecklistItems] = React.useState([])
+  
 
-  function addCheckListItem(){
-    setChecklistItems(prevCheckListItems => [...prevCheckListItems])
-  }
+  
+
 
   return (
     <div className="App">
      <Header />
-     <body className="app-content">
+     <div className="app-content">
      <Sidebar />
-     <Main checkListItems={checkListItems} />
+     <Main 
+      />
       
-     </body>
+     </div>
     </div>
   );
 }
